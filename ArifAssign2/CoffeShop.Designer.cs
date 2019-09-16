@@ -41,12 +41,14 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.itemRichTextBox = new System.Windows.Forms.RichTextBox();
+            this.addButton = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBox1.Controls.Add(this.addButton);
             this.groupBox1.Controls.Add(this.showButton);
             this.groupBox1.Controls.Add(this.itemComboBox);
             this.groupBox1.Controls.Add(this.quantityTextBox);
@@ -69,11 +71,11 @@
             // showButton
             // 
             this.showButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.showButton.Location = new System.Drawing.Point(214, 234);
+            this.showButton.Location = new System.Drawing.Point(271, 244);
             this.showButton.Name = "showButton";
-            this.showButton.Size = new System.Drawing.Size(82, 29);
+            this.showButton.Size = new System.Drawing.Size(84, 27);
             this.showButton.TabIndex = 10;
-            this.showButton.Text = "Save";
+            this.showButton.Text = "Show All";
             this.showButton.UseVisualStyleBackColor = true;
             this.showButton.Click += new System.EventHandler(this.showButton_Click);
             // 
@@ -167,9 +169,20 @@
             // 
             this.itemRichTextBox.Location = new System.Drawing.Point(541, 32);
             this.itemRichTextBox.Name = "itemRichTextBox";
-            this.itemRichTextBox.Size = new System.Drawing.Size(227, 278);
+            this.itemRichTextBox.Size = new System.Drawing.Size(227, 292);
             this.itemRichTextBox.TabIndex = 1;
             this.itemRichTextBox.Text = "";
+            // 
+            // addButton
+            // 
+            this.addButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addButton.Location = new System.Drawing.Point(144, 244);
+            this.addButton.Name = "addButton";
+            this.addButton.Size = new System.Drawing.Size(70, 27);
+            this.addButton.TabIndex = 11;
+            this.addButton.Text = "Add";
+            this.addButton.UseVisualStyleBackColor = true;
+            this.addButton.Click += new System.EventHandler(this.AddButton_Click);
             // 
             // CoffeShop
             // 
@@ -201,6 +214,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.RichTextBox itemRichTextBox;
+        private System.Windows.Forms.Button addButton;
     }
 }
 

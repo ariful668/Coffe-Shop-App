@@ -18,3 +18,13 @@ C:\Users\arifu\Downloads\ArifAssign2-20190913T132345Z-001\ArifAssign2\ArifAssign
 C:\Users\arifu\Downloads\ArifAssign2-20190913T132345Z-001\ArifAssign2\ArifAssign2\obj\Debug\ArifAssign2.csproj.CoreCompileInputs.cache
 C:\Users\arifu\Downloads\ArifAssign2-20190913T132345Z-001\ArifAssign2\ArifAssign2\obj\Debug\ArifAssign2.exe
 C:\Users\arifu\Downloads\ArifAssign2-20190913T132345Z-001\ArifAssign2\ArifAssign2\obj\Debug\ArifAssign2.pdb
+E:\Coffe Shop\Coffe-Shop-App\ArifAssign2\bin\Debug\ArifAssign2.exe.config
+E:\Coffe Shop\Coffe-Shop-App\ArifAssign2\bin\Debug\ArifAssign2.exe
+E:\Coffe Shop\Coffe-Shop-App\ArifAssign2\bin\Debug\ArifAssign2.pdb
+E:\Coffe Shop\Coffe-Shop-App\ArifAssign2\obj\Debug\ArifAssign2.csprojAssemblyReference.cache
+E:\Coffe Shop\Coffe-Shop-App\ArifAssign2\obj\Debug\ArifAssign2.CoffeShop.resources
+E:\Coffe Shop\Coffe-Shop-App\ArifAssign2\obj\Debug\ArifAssign2.Properties.Resources.resources
+E:\Coffe Shop\Coffe-Shop-App\ArifAssign2\obj\Debug\ArifAssign2.csproj.GenerateResource.cache
+E:\Coffe Shop\Coffe-Shop-App\ArifAssign2\obj\Debug\ArifAssign2.csproj.CoreCompileInputs.cache
+E:\Coffe Shop\Coffe-Shop-App\ArifAssign2\obj\Debug\ArifAssign2.exe
+E:\Coffe Shop\Coffe-Shop-App\ArifAssign2\obj\Debug\ArifAssign2.pdb

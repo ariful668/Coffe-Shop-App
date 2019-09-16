@@ -12,41 +12,68 @@ namespace ArifAssign2
 {
     public partial class CoffeShop : Form
     {
+        const int size = 3;
+        string[] name = new string[size];
+        string[] phone = new string[size];
+        string[] address = new string[size];
+        string[] order = new string[size];
+        int[] quantity = new int[size];
+        int index = 0;
+        string Message = "";
+
+
         public CoffeShop()
         {
             InitializeComponent();
         }
 
-        private void showButton_Click(object sender, EventArgs e)
+        private void AddButton_Click(object sender, EventArgs e)
         {
-            string name = nameTextBox.Text;
-            string phone = phoneTextBox.Text;
-            string address = addressTextBox.Text;
-            string order = itemComboBox.Text;
-            string quantity = quantityTextBox.Text;
-
-            if(itemComboBox.SelectedItem.ToString() == "Black")
+            if (index < size)
             {
-                quantity = (float.Parse(quantity) * 120).ToString();
-            }
-            else if (itemComboBox.SelectedItem.ToString() == "Cold")
-            {
-                quantity = (float.Parse(quantity) * 100).ToString();
-            }
-            else if (itemComboBox.SelectedItem.ToString() == "Hot")
-            {
-                quantity = (float.Parse(quantity) * 90).ToString();
-            }
-            else if (itemComboBox.SelectedItem.ToString() == "Regular")
-            {
-                quantity = (float.Parse(quantity) * 80).ToString();
+                name[index] = nameTextBox.Text;
+                phone[index] = phoneTextBox.Text;
+                address[index] = addressTextBox.Text;
+                order[index] = itemComboBox.Text;
+                quantity[index] = Convert.ToInt32(quantityTextBox.Text);
+                index++;
             }
             else
             {
-                MessageBox.Show("Select an item");
+                MessageBox.Show("Array is Full");
             }
 
-            itemRichTextBox.Text = "Customer Name: " + name + "\n" + "\n" + "Customer No: " + phone + "\n" + "\n" + "Address: " + address + "\n" + "\n" + "Order: " + order + "\n" + "\n" + "Price: " + quantity;
+        }
+        private void showButton_Click(object sender, EventArgs e)
+        {
+            
+            for (int index = 0; index < size; index++)
+            {
+                if (itemComboBox.SelectedItem.ToString() == "Black")
+                {
+                    quantity[index] = ((quantity[index]) * 120);
+                }
+                else if (itemComboBox.SelectedItem.ToString() == "Cold")
+                {
+                    quantity[index] = ((quantity[index]) * 100);
+                }
+                else if (itemComboBox.SelectedItem.ToString() == "Hot")
+                {
+                    quantity[index] = ((quantity[index]) * 90);
+                }
+                else if (itemComboBox.SelectedItem.ToString() == "Regular")
+                {
+                    quantity[index] = ((quantity[index]) * 80);
+                }
+                else
+                {
+                    MessageBox.Show("Select an item");
+                }
+                Message += "Customer Name: " + name[index]  + "\n" + "Customer No: " + phone[index]  + "\n" + "Address: " + address[index] + "\n"  + "Order: " + order[index] +  "\n" + "Price: " + quantity[index] + "\n" + "\n";
+            }
+            
+
+            itemRichTextBox.Text= Message;
 
         }
     }
