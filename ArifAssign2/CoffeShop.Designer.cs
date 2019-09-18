@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.addButton = new System.Windows.Forms.Button();
             this.showButton = new System.Windows.Forms.Button();
             this.itemComboBox = new System.Windows.Forms.ComboBox();
             this.quantityTextBox = new System.Windows.Forms.TextBox();
@@ -41,7 +42,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.itemRichTextBox = new System.Windows.Forms.RichTextBox();
-            this.addButton = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,14 +68,26 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Customer Information";
             // 
+            // addButton
+            // 
+            this.addButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addButton.Location = new System.Drawing.Point(144, 244);
+            this.addButton.Name = "addButton";
+            this.addButton.Size = new System.Drawing.Size(70, 27);
+            this.addButton.TabIndex = 11;
+            this.addButton.Text = "Add";
+            this.addButton.UseVisualStyleBackColor = true;
+            this.addButton.Click += new System.EventHandler(this.AddButton_Click);
+            // 
             // showButton
             // 
             this.showButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.showButton.Location = new System.Drawing.Point(271, 244);
+            this.showButton.Location = new System.Drawing.Point(241, 244);
             this.showButton.Name = "showButton";
             this.showButton.Size = new System.Drawing.Size(84, 27);
             this.showButton.TabIndex = 10;
-            this.showButton.Text = "Show All";
+            this.showButton.TabStop = false;
+            this.showButton.Text = "Show";
             this.showButton.UseVisualStyleBackColor = true;
             this.showButton.Click += new System.EventHandler(this.showButton_Click);
             // 
@@ -167,22 +179,13 @@
             // 
             // itemRichTextBox
             // 
+            this.itemRichTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.itemRichTextBox.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.itemRichTextBox.Location = new System.Drawing.Point(541, 32);
             this.itemRichTextBox.Name = "itemRichTextBox";
             this.itemRichTextBox.Size = new System.Drawing.Size(227, 292);
             this.itemRichTextBox.TabIndex = 1;
             this.itemRichTextBox.Text = "";
-            // 
-            // addButton
-            // 
-            this.addButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addButton.Location = new System.Drawing.Point(144, 244);
-            this.addButton.Name = "addButton";
-            this.addButton.Size = new System.Drawing.Size(70, 27);
-            this.addButton.TabIndex = 11;
-            this.addButton.Text = "Add";
-            this.addButton.UseVisualStyleBackColor = true;
-            this.addButton.Click += new System.EventHandler(this.AddButton_Click);
             // 
             // CoffeShop
             // 

@@ -28,3 +28,13 @@ E:\Coffe Shop\Coffe-Shop-App\ArifAssign2\obj\Debug\ArifAssign2.csproj.GenerateRe
 E:\Coffe Shop\Coffe-Shop-App\ArifAssign2\obj\Debug\ArifAssign2.csproj.CoreCompileInputs.cache
 E:\Coffe Shop\Coffe-Shop-App\ArifAssign2\obj\Debug\ArifAssign2.exe
 E:\Coffe Shop\Coffe-Shop-App\ArifAssign2\obj\Debug\ArifAssign2.pdb
+E:\BITM\Day4\Coffe-Shop-App\ArifAssign2\bin\Debug\ArifAssign2.exe.config
+E:\BITM\Day4\Coffe-Shop-App\ArifAssign2\bin\Debug\ArifAssign2.exe
+E:\BITM\Day4\Coffe-Shop-App\ArifAssign2\bin\Debug\ArifAssign2.pdb
+E:\BITM\Day4\Coffe-Shop-App\ArifAssign2\obj\Debug\ArifAssign2.csprojAssemblyReference.cache
+E:\BITM\Day4\Coffe-Shop-App\ArifAssign2\obj\Debug\ArifAssign2.CoffeShop.resources
+E:\BITM\Day4\Coffe-Shop-App\ArifAssign2\obj\Debug\ArifAssign2.Properties.Resources.resources
+E:\BITM\Day4\Coffe-Shop-App\ArifAssign2\obj\Debug\ArifAssign2.csproj.GenerateResource.cache
+E:\BITM\Day4\Coffe-Shop-App\ArifAssign2\obj\Debug\ArifAssign2.csproj.CoreCompileInputs.cache
+E:\BITM\Day4\Coffe-Shop-App\ArifAssign2\obj\Debug\ArifAssign2.exe
+E:\BITM\Day4\Coffe-Shop-App\ArifAssign2\obj\Debug\ArifAssign2.pdb

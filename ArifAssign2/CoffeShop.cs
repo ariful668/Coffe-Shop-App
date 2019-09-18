@@ -12,14 +12,11 @@ namespace ArifAssign2
 {
     public partial class CoffeShop : Form
     {
-        const int size = 3;
-        string[] name = new string[size];
-        string[] phone = new string[size];
-        string[] address = new string[size];
-        string[] order = new string[size];
-        int[] quantity = new int[size];
-        int index = 0;
-        string Message = "";
+        List<string> name = new List<string> { };
+        List<int> phone = new List<int> {  };
+        List<string> address = new List<string> {  };
+        List<string> order = new List<string> {  };
+        List<int> quantity = new List<int> {  };
 
 
         public CoffeShop()
@@ -29,52 +26,93 @@ namespace ArifAssign2
 
         private void AddButton_Click(object sender, EventArgs e)
         {
-            if (index < size)
+            try
             {
-                name[index] = nameTextBox.Text;
-                phone[index] = phoneTextBox.Text;
-                address[index] = addressTextBox.Text;
-                order[index] = itemComboBox.Text;
-                quantity[index] = Convert.ToInt32(quantityTextBox.Text);
-                index++;
-            }
-            else
-            {
-                MessageBox.Show("Array is Full");
-            }
+                if (phone.Contains(Convert.ToInt32(phoneTextBox.Text)))
+                {
+                    MessageBox.Show("Phone Number must be unique");
+                    return;
+                }
+                else
+                {
+                    phone.Add(Convert.ToInt32(phoneTextBox.Text));
+                }
+                if (!String.IsNullOrEmpty(itemComboBox.Text))
+                {
+                    order.Add(itemComboBox.Text);
+                }
+                else
+                {
+                    MessageBox.Show("Please select any Item");
+                    return;
+                }
 
+                if (!String.IsNullOrEmpty(quantityTextBox.Text))
+                {
+                    quantity.Add(Convert.ToInt32(quantityTextBox.Text));
+                }
+                else
+                {
+                    MessageBox.Show("Please insert the Quantity");
+                    return;
+                }
+
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show(exception.Message);
+                return;
+            }
+            name.Add(nameTextBox.Text);
+            address.Add(addressTextBox.Text);
+            addCustomer();
+            MessageBox.Show("Data Added");
+            nameTextBox.Clear();
+            phoneTextBox.Clear();
+            addressTextBox.Clear();
+            itemComboBox.SelectedIndex = -1;
+            quantityTextBox.Clear();
         }
         private void showButton_Click(object sender, EventArgs e)
         {
-            
-            for (int index = 0; index < size; index++)
+            showCustomer();
+        }
+        private void showCustomer()
+        {
+            string Message = "";
+            for (int i = 0; i < name.Count(); i++)
+            {
+                Message += "Customer Name: " + name[i] + "\n" + "Customer Phone: " + phone[i] + "\n" + "Customer Address: " + address[i] + "\n" + "order: " + order[i] + "\n" + "Price: " + quantity[i] + "\n" + "\n";
+            }
+
+            itemRichTextBox.Text = Message;
+        }
+        private void addCustomer()
+        {
+            for (int i = 0; i < name.Count(); i++)
             {
                 if (itemComboBox.SelectedItem.ToString() == "Black")
                 {
-                    quantity[index] = ((quantity[index]) * 120);
+                    quantity[i] = quantity[i] * 120;
                 }
                 else if (itemComboBox.SelectedItem.ToString() == "Cold")
                 {
-                    quantity[index] = ((quantity[index]) * 100);
+                    quantity[i] = quantity[i] * 100;
                 }
                 else if (itemComboBox.SelectedItem.ToString() == "Hot")
                 {
-                    quantity[index] = ((quantity[index]) * 90);
+                    quantity[i] = quantity[i] * 90;
                 }
                 else if (itemComboBox.SelectedItem.ToString() == "Regular")
                 {
-                    quantity[index] = ((quantity[index]) * 80);
+                    quantity[i] = quantity[i] * 80;
                 }
                 else
                 {
                     MessageBox.Show("Select an item");
                 }
-                Message += "Customer Name: " + name[index]  + "\n" + "Customer No: " + phone[index]  + "\n" + "Address: " + address[index] + "\n"  + "Order: " + order[index] +  "\n" + "Price: " + quantity[index] + "\n" + "\n";
+                itemRichTextBox.Text = "Customer Name: " + name[i] + "\n" + "Customer Phone: " + phone[i] + "\n" + "Customer Address: " + address[i] + "\n" + "order: " + order[i] + "\n" + "Price: " + quantity[i] + "\n" + "\n";
             }
-            
-
-            itemRichTextBox.Text= Message;
-
-        }
+        }   
     }
 }
